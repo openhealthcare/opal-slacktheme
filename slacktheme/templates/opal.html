@@ -1,0 +1,40 @@
+{% extends 'app_layouts/layout_base.html' %}
+{% load forms %}
+{% load static %}
+{% load menus %}
+{% load slack %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-2" id="left-col">
+    <h1>
+      {{ OPAL_BRAND_NAME }}
+    </h1>
+    <h2>
+      {% icon 'fa-circle' %}
+      {{ request.user.username }}
+    </h2>
+    {% menu %}
+    <h3>
+      PATIENT LISTS
+    </h3>
+
+    {% slack_lists %}
+  </div>
+  <div class="col-md-10" id="center-col">
+
+    <nav class="navbar navbar-default navbar-primary navbar-fixed-top screen-only top-navbar" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        {% include 'partials/_nav_search.html' %}
+
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    {{ block.super }}
+  </div>
+</div>
+{% endblock %}

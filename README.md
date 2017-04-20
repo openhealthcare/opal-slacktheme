@@ -1,0 +1,1 @@
+This is slacktheme - an [Opal](https://github.com/openhealthcare/opal) plugin.

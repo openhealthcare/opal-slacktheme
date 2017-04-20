@@ -1,0 +1,2 @@
+recursive-include slacktheme/static *
+recursive-include slacktheme/templates *

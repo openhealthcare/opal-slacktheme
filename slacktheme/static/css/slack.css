@@ -1,0 +1,165 @@
+/* Layout */
+#center-col {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.navbar {
+  min-height: 53px;
+}
+.navbar-fixed-top {
+    left: 230px;
+}
+.top-navbar {
+    border-bottom: 1px solid #ccc;
+    left: auto;
+    right: 0px;
+    width: 83.33333333333%
+}
+.nav-pills li a {
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+.nav-pills li i {
+    margin-right: 4px;
+}
+.nav-pills li {
+    height: 26px;
+}
+
+.panel.panel-primary.patient-detail .patient-detail-heading,
+.panel.panel-primary .panel-heading.pathway-header{
+  background: none;
+  position: fixed;
+  top: 0px;
+  z-index: 2999;
+  padding: 0px
+}
+
+.pathway-header h2,
+.panel.panel-primary.patient-detail .patient-detail-heading h1{
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 12px;
+}
+.panel.panel-primary.patient-detail .patient-detail-heading h1 small{
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #717274;
+}
+.panel-footer .btn {
+  float: right;
+}
+
+/**** Colours ****/
+
+#left-col {
+    background: rgb(77, 57, 75);
+    height: 100vh;
+}
+#center-col {
+    background: white;
+}
+#left-col .nav-pills li.active a {
+    background: rgb(76, 150, 137);
+    color: white;
+}
+.nav-pills li a:hover{
+    background:    rgb(57, 47, 55)
+}
+/* Fonts */
+body,
+h1 small {
+  color: rgb(44, 45, 48);
+  font-size: 15px;
+}
+.panel.panel-primary .panel-heading a,
+a {
+    color: rgb(0, 122, 184);
+}
+
+#left-col,
+#left-col .nav a{
+    color:rgb(171, 155, 169);
+}
+#left-col h1 {
+    margin-left: 18px;
+    font-size: 18px;
+    color: white;
+}
+#left-col h2{
+    margin-left: 18px;
+    font-size: 16px;
+}
+#left-col h2 i{
+    font-size: 12px;
+    color:  rgb(76, 150, 137);
+    margin-right: 2px;
+}
+#left-col h3 {
+  font-size: 14px;
+  margin-left: 18px;
+}
+/* Component reskins */
+.ngProgressLiteBar {
+    display: none;
+}
+
+.panel {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.panel-default .panel-body{
+  background: white;
+}
+.panel-default .panel-heading{
+  padding-left: 0px;
+}
+
+.panel.panel-primary .panel-heading {
+  background: rgb(242, 242, 245);
+  border: none;
+  color:#555459;
+  padding-left: 20px
+}
+.panel-footer {
+  background: none;
+  border: none;
+}
+.btn.btn-primary {
+    background: rgb(42, 178, 123);
+    box-shadow: none;
+    border: none;
+    border-radius: .25rem;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.panel.login {
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 200%;
+  margin-left: -160px;
+  background: white;
+}
+.panel-primary.login .panel-heading h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.panel.login .panel-heading {
+  background: white;
+}
+.panel.login .btn.btn-primary {
+  width: 100%;
+}
+.panel.login input {
+  font-size: 20px;
+  line-height: 34px;
+  height: 56px;
+}

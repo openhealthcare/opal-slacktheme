@@ -1,0 +1,11 @@
+{% load forms %}
+<ul class="nav nav-pills nav-stacked">
+  {% for list in lists %}
+  <li ng-class="{active: $location.absUrl().indexOf('{{ list.get_slug }}') != -1}">
+    <a href="/#/list/{{ list.get_slug }}">
+      {% icon 'fa-table' %}
+      {{ list.display_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
