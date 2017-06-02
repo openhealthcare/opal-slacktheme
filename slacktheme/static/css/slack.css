@@ -28,6 +28,7 @@
 }
 
 .panel.panel-primary.patient-detail .patient-detail-heading,
+.panel.panel-primary .panel-heading.patient-list-header,
 .panel.panel-primary .panel-heading.pathway-header{
   background: none;
   position: fixed;
@@ -37,10 +38,12 @@
 }
 
 .pathway-header h2,
+.patient-detail-deader h2,
 .panel.panel-primary.patient-detail .patient-detail-heading h1{
   background: none;
   font-size: 18px;
   font-weight: bold;
+
   padding: 0px;
   margin: 0px;
   margin-top: 12px;
@@ -64,6 +67,9 @@
 #center-col {
     background: white;
 }
+#left-col h1 small {
+  color: white;
+}
 #left-col .nav-pills li.active a {
     background: rgb(76, 150, 137);
     color: white;
@@ -76,6 +82,12 @@ body,
 h1 small {
   color: rgb(44, 45, 48);
   font-size: 15px;
+}
+.panel h2 {
+  color: rgb(44, 45, 48);
+}
+table {
+    font-size: inherit;
 }
 .panel.panel-primary .panel-heading a,
 a {
